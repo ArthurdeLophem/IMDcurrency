@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Log in</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <form>
+        <input type="button" value="&larr;" onclick="history.back()">
+    </form>
+
+
+    <div class="transaction-form">
+      <h2>Transaction</h2>
+      <form>
+        <input type="text" title="username" placeholder="username" />
+        <input type="password" title="password" placeholder="password" />
+        <input type="number" id="quantity" name="quantity" placeholder="amount">
+        <input type="text" title="comment" placeholder="comment" />
+
+        <a href="home.html">
+          <input type="button" value="Send credits"/>
+        </a>
+        
+      </form>
+    </div>
+
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
