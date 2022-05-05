@@ -1,0 +1,34 @@
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 1em 2em;
+    background-color: #C2B8FF;
+    color: black;
+    font-weight: 600;
+    transition: all 0.5s;
+    margin: 0.5em;
+  }
+  
+.btn:hover {
+    background-color: #1500FF;
+    color: white;
+}
+
+.back-arrow{
+    width: 30px;
+}
+
+.arrow{
+    width: 45px;
+    height: 45px;
+    background-color: #1500FF;
+    border-radius: 10px;
+}
+
+.filter{
+    width: 20px;
+    height: 20px;
+}
+
+  

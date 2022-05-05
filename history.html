@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
     <title>Log in</title>
   </head>
   <body>
-    <div id="app"></div>
-
-    <form>
-        <input type="button" value="&larr;" onclick="history.back()">
-    </form>
+    <a href="home.html">
+      <img class="back-arrow" src="/images/back-arrow.svg" alt="back-arrow">
+    </a>
 
     <h1>History</h1>
 
     <input type="text" placeholder="Search.." name="search">
 
-    <p>[filter icon]</p>
+    <a href="">
+      <img class="filter" src="/images/filter.svg" alt="filter">
+    </a>
+    
 
     <div class="transaction">
         <h3>[name] send you some IMD-coins</h3>
