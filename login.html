@@ -4,37 +4,35 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  </style>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   <title>Log in</title>
 </head>
 
 <body>
-  <div id="app"></div>
 
-  <img src="images/home_banner.png" alt="home_banner">
+  <img class="home_banner" src="images/home_banner.png" alt="home_banner">
+  
+  
 
-  <h1>Welcome to IMD-currency</h1>
+  <h1 class="header">Welcome to IMD-currency</h1>
+
+  <h2 class="log-in">Log in</h2>
+
+  <form class="login-form">
+    <p>E-mail or username</p>
+    <input class="user-input" type="text" title="username"/> <br>
+    <p>Password</p>
+    <input class="user-input" type="password" title="password"/> <br>
+
+    <a href="home.html" class="btn btn--submit">
+      <span class="btn__text">Login</span>
+    </a>
+
+    <!-- <a class="forgot" href="#">Forgot password?</a> -->
+  </form>
 
 
-  <div class="login-form">
-    <h2>Log in</h2>
-    <form>
-      <input class="username" type="text" title="username" placeholder="username" />
-      <input class="password" type="password" title="password" placeholder="password" />
-
-      <a href="home.html" class="btn">
-        <span class="btn__text">Login</span>
-      </a>
-
-      <!-- <a class="forgot" href="#">Forgot password?</a> -->
-    </form>
-  </div>
-
-  <a href="register.html">
+  <a href="register.html" class="GT-register">
     <p>You're new here? <strong>Register now</strong></p>
   </a>
 
