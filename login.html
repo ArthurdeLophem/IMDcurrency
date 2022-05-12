@@ -4,37 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Log in</title>
 </head>
 
 <body>
+  <div class="form-container">
+    <img class="home_banner" src="images/home_banner.png" alt="home_banner">
+    <h1 class="header">Welcome to IMD-currency</h1>
+    <h2 class="log-in">Log in</h2>
 
-  <img class="home_banner" src="images/home_banner.png" alt="home_banner">
-  
-  
+    <form class="login-form">
+      <p>E-mail or username</p>
+      <input class="user-input" type="text" title="username" /> <br>
+      <p>Password</p>
+      <input class="user-input" type="password" title="password" /> <br>
 
-  <h1 class="header">Welcome to IMD-currency</h1>
+      <a href="#" class="btn btn--submit">
+        <span class="btn__text">Login</span>
+      </a>
+      <!-- <a class="forgot" href="#">Forgot password?</a> -->
+    </form>
 
-  <h2 class="log-in">Log in</h2>
-
-  <form class="login-form">
-    <p>E-mail or username</p>
-    <input class="user-input" type="text" title="username"/> <br>
-    <p>Password</p>
-    <input class="user-input" type="password" title="password"/> <br>
-
-    <a href="#" class="btn btn--submit">
-      <span class="btn__text">Login</span>
+    <a href="register.html" class="GT-register">
+      <p>You're new here? <strong>Register now</strong></p>
     </a>
-
-    <!-- <a class="forgot" href="#">Forgot password?</a> -->
-  </form>
-
-
-  <a href="register.html" class="GT-register">
-    <p>You're new here? <strong>Register now</strong></p>
-  </a>
+  </div>
 
 
   <script type="module" src="/main.js"></script>
