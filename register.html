@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <link rel="stylesheet" href="style.css">
   <title>Register</title>
 </head>
 
@@ -17,22 +21,21 @@
   <div class="login-form">
     <h2>Register now!</h2>
     <form>
-      <input id="username" name="username" class="username" type="text" title="username" placeholder="username" />
-      <input id="email" name="email" class="email" type="text" title="email" placeholder="e-mail" />
-      <input id="password" name="password" class="password" type="password" title="password" placeholder="password" />
-      <a href="#">
-        <input class="submitBtn" type="button" value="Register" />
+      <input class="username" type="text" title="username" placeholder="username" />
+      <input class="email" type="text" title="email" placeholder="e-mail" />
+      <input class="password" type="password" title="password" placeholder="password" />
+      <a href="home.html" class="btn">
+        <span class="btn__text">Register</span>
       </a>
 
     </form>
   </div>
 
   <a href="login.html">
-    <p>Already have an account? <strong>log in</strong></p>
+    <p>Already have an account? <strong>Log in</strong></p>
   </a>
 
   <script type="module" src="/main.js"></script>
-  <script type="module" src="/js/register.js"></script>
 </body>
 
 </html>

@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Log in</title>
   </head>
   <body>
-    <div id="app"></div>
+    
 
-    <form>
-        <input type="button" value="&larr;" onclick="history.back()">
-    </form>
+    <a href="home.html">
+      <img class="back-arrow" src="/images/back-arrow.svg" alt="back-arrow">
+    </a>
 
 
     <div class="transaction-form">
@@ -22,8 +26,8 @@
         <input type="number" id="quantity" name="quantity" placeholder="amount">
         <input type="text" title="comment" placeholder="comment" />
 
-        <a href="home.html">
-          <input type="button" value="Send credits"/>
+        <a href="transaction.html" class="btn">
+          <span class="btn__text">Send credits</span>
         </a>
         
       </form>

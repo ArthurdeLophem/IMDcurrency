@@ -4,26 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Log in</title>
   </head>
   <body>
-    <div id="app"></div>
-
-    <form>
-        <input type="button" value="&larr;" onclick="history.back()">
-    </form>
+    <a href="home.html">
+      <img class="back-arrow" src="/images/back-arrow.svg" alt="back-arrow">
+    </a>
 
     <h1>History</h1>
 
     <input type="text" placeholder="Search.." name="search">
 
-    <p>[filter icon]</p>
+    <a href="">
+      <img class="filter" src="/images/filter.svg" alt="filter">
+    </a>
+    
 
-    <div class="transaction">
-        <h3>[name] send you some IMD-coins</h3>
-        <p>Thanks for helping me code php</p>
-        <p>[date]</p>
-        <p>[amount of coins]</p>
+    <div class="transaction">      
+      <h3 class="name">[name] send you some IMD-coins</h3>
+      <p class="comment">Thanks for helping me code php</p>
+      <p class="date">[date]</p>
+      <p class="amount">[amount of coins]</p>
     </div>
     
 

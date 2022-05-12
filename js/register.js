@@ -1,4 +1,4 @@
-document.querySelector(".submitBtn").addEventListener("click", (e) => {
+document.querySelector(".btn").addEventListener("click", (e) => {
     let username = document.querySelector(".username").value;
     let email = document.querySelector(".email").value;
     let password = document.querySelector(".password").value;

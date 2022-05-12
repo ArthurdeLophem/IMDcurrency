@@ -1,4 +1,4 @@
-document.querySelector(".submitBtn").addEventListener("click", (e) => {
+document.querySelector(".btn").addEventListener("click", (e) => {
     e.preventDefault();
     const username = document.querySelector(".username").value;
     const password = document.querySelector(".password").value;
