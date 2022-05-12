@@ -85,3 +85,14 @@
     font-weight: 600;
     padding-top: 40px;
   }
+
+  .recent-transactions {  
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". .";
+  }
+  
