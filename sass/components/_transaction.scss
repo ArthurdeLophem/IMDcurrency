@@ -1,0 +1,37 @@
+.transaction{
+    background-color: whitesmoke;
+    align-content: center;
+    text-align: left;
+    padding: 10px;
+    padding-top: 5px;
+    padding-left: 15px; ;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .transaction {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "name name name"
+      "comment comment ."
+      "date date amount";
+  }
+  
+  .name { grid-area: name; }
+  
+  .comment { grid-area: comment; }
+  
+  .date { grid-area: date; }
+  
+  .amount { grid-area: amount; }
+  
+
