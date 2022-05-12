@@ -1,3 +1,5 @@
+@use "../colors";
+
 .btn {
     display: inline-block;
     border-radius: 5px;
@@ -11,7 +13,12 @@
   }
   
 .btn:hover {
-    background-color: #1500FF;
+    background-color: colors.$blue;
+    color: white;
+}
+
+.btn--submit {
+    background-color: colors.$blue;
     color: white;
 }
 
@@ -22,7 +29,7 @@
 .arrow{
     width: 45px;
     height: 45px;
-    background-color: #1500FF;
+    background-color: colors.$blue;
     border-radius: 10px;
 }
 
