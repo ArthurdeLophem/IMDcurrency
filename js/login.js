@@ -1,15 +1,15 @@
 document.querySelector(".btn").addEventListener("click", (e) => {
     e.preventDefault();
-    const username = document.querySelector(".username").value;
+    const email = document.querySelector(".email").value;
     const password = document.querySelector(".password").value;
 
-    fetch('http://localhost:3001/users/api/v1/login/', {
+    fetch('http://localhost:3001/api/v1/users/login/', {
         method: 'POST',
         headers: {
-            contentType: 'application/json'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "username": username,
+            "email": email,
             "password": password
         })
     }).then(res => {
