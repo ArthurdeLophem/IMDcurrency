@@ -8,31 +8,40 @@
   </head>
   <body>
 
-    <h1>Hello [name]</h1>
-    <p>Your current amount of IMD-coins is:</p>
+    <div class="home-page">
+      <div class="intro">
+        <h1>Hello [name]</h1>
+        <p>Your current amount of IMD-coins is:</p>
+      </div>
 
-    <h1 class="current-amount">[amount]</h1>
+      <div class="current-amount">
+        <h1 class="mycoins">[amount]</h1>
+      </div>
 
-    <a href="leaderboard.html" class="btn">
-      <span class="btn__text">Leaderboard</span>
-    </a>
+      <div class="buttons">
+        <a href="leaderboard.html" class="btn">
+          <span class="btn__text">Leaderboard</span>
+        </a>
 
-    <a href="transaction.html" class="btn">
-      <span class="btn__text">Transaction</span>
-    </a>
+        <a href="transaction.html" class="btn">
+          <span class="btn__text">Transaction</span>
+        </a>
 
-    <a href="history.html" class="btn">
-      <span class="btn__text">History</span>
-    </a>
+        <a href="history.html" class="btn">
+          <span class="btn__text">History</span>
+        </a>
+      </div>
 
-    <div class="recent-transactions">
-      <h2>Transactions:</h2>
+      <div class="RT">
+        <h2>Transactions:</h2>
+      </div>
 
-      <a href="history.html">
-        <p>See all</p>
-      </a>
+      <div class="see-all">
+        <a href="history.html">
+          <p>See all</p>
+        </a>
+      </div>
     </div>
-    
 
     <div class="transaction">      
       <h3 class="name">[name] send you some IMD-coins</h3>
@@ -40,10 +49,6 @@
       <p class="date">[date]</p>
       <p class="amount">[amount of coins]</p>
     </div>
-    
-
-    
-
 
     <script type="module" src="/main.js"></script>
   </body>
