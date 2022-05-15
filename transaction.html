@@ -8,26 +8,38 @@
   </head>
   <body>
     
+    <div class="transaction-page">
 
-    <a href="home.html">
-      <img class="back-arrow" src="/images/back-arrow.svg" alt="back-arrow">
-    </a>
+      <div class="back">
+        <a href="home.html">
+          <img class="back-icon" src="/images/back-arrow.svg" alt="back-arrow">
+        </a>
+      </div>
 
+      <div class="header">
+        <h2>Transaction</h2>
+      </div>
 
-    <div class="transaction-form">
-      <h2>Transaction</h2>
-      <form>
-        <input type="text" title="username" placeholder="username" />
-        <input type="password" title="password" placeholder="password" />
-        <input type="number" id="quantity" name="quantity" placeholder="amount">
-        <input type="text" title="comment" placeholder="comment" />
-
+      <div class="transaction-form">
+        <form>
+          <p>Username</p>
+            <input class="user-input" type="text" title="username"/>
+          <p>Amount</p>
+            <input class="user-input" type="number" id="quantity" name="quantity">
+          <p>Motive</p>
+            <input class="user-input" type="text" title="motive"/>
+          <p>Comment</p>
+            <input class="user-input" type="text" title="comment"/>  
+        </form>
+      </div>
+      
+      <div class="send-credits">
         <a href="transaction.html" class="btn">
           <span class="btn__text">Send credits</span>
         </a>
-        
-      </form>
+      </div>
     </div>
+
 
 
 
