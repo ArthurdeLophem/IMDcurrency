@@ -2,13 +2,14 @@
 
 
 .transaction{
-    background-color: whitesmoke;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #e1e1e1;
     align-content: center;
     text-align: left;
     padding: 10px;
     padding-top: 5px;
     padding-left: 15px; ;
-    width: 80%;
+    width: 500px;
     border-radius: 10px;
     margin-top: 20px;
     margin-left: auto;
@@ -21,7 +22,7 @@
   .transaction {  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
