@@ -1,0 +1,42 @@
+@use "../colors";
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    justify-content: center;
+    margin: auto;
+}
+
+.form__header {
+    text-align: center;
+    margin: 0;
+}
+
+.form__header--sm {
+    text-align: left;
+    font-weight: 600;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.form__input {
+    margin-bottom: 20px;
+    width: 80%;
+    height: 40px;
+    border-color: colors.$green;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.form__input--xl {
+    width: 80%;
+    height: 60px;
+}
+
+.form__text {
+    text-align: left;
+    margin-left: 55px;
+}

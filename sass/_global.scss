@@ -3,221 +3,214 @@
 
 
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Montserrat', sans-serif;
-  }
+  box-sizing: border-box;
+}
 
-  /* login.html & register.html */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 
-  .home_banner{
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+/* register.html */
 
-  .header{
-    text-align: center;
-  }
+.register-form {
+  text-align: center;
+  padding-top: 5px;
+}
 
-  /* login.html */
+.register-form input {
+  margin-bottom: 15px;
+}
 
-  .login-form{
-    text-align: center;
-    padding-top: 5px;
-  }
+.register-form p {
+  text-align: left;
+  margin-left: 55px;
+}
 
-  .login-form input{
-    margin-bottom: 20px;
-  }
+.register {
+  text-align: left;
+  font-weight: 600;
+  margin-left: 20px;
+  padding-top: 10px;
+}
 
-  .login-form p{
-    text-align: left;
-    margin-left: 55px;
-  }
+.GT-register {
+  text-align: center;
+}
 
-  .log-in{
-    text-align: left;
-    font-weight: 600;
-    margin-left: 20px;
-    padding-top: 10px;
-  }
+.GT-login {
+  text-align: center;
+}
 
-  /* register.html */
+/* home.html */
 
-  .register-form{
-    text-align: center;
-    padding-top: 5px;
-  }
+.home-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "intro intro ."
+    ". current-amount ."
+    "buttons buttons buttons"
+    "RT . see-all";
+}
 
-  .register-form input{
-    margin-bottom: 15px;
-  }
+.intro {
+  grid-area: intro;
+}
 
-  .register-form p{
-    text-align: left;
-    margin-left: 55px;
-  }
+.current-amount {
+  grid-area: current-amount;
+}
 
-  .register{
-    text-align: left;
-    font-weight: 600;
-    margin-left: 20px;
-    padding-top: 10px;
-  }
+.buttons {
+  grid-area: buttons;
+}
 
-  .GT-register{
-    text-align: center;
-  }
+.RT {
+  grid-area: RT;
+}
 
-  .GT-login{
-    text-align: center;
-  }
-
-  /* home.html */
-
-  .home-page {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  0.5fr 0.5fr 0.5fr 0.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "intro intro ."
-      ". current-amount ."
-      "buttons buttons buttons"
-      "RT . see-all";
-  }
-  
-  .intro { grid-area: intro; }
-  
-  .current-amount { grid-area: current-amount; }
-  
-  .buttons { grid-area: buttons; }
-  
-  .RT { grid-area: RT; }
-  
-  .see-all { grid-area: see-all; }
+.see-all {
+  grid-area: see-all;
+}
 
 
-  .mycoins{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    padding-top: 40px;
-  }
+.mycoins {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 40px;
+}
 
-  .current-amount{
-    margin-bottom: 60px;
-  }
-  
-  .buttons{
-    margin-left: auto;
-    margin-right: auto;
-  }
+.current-amount {
+  margin-bottom: 60px;
+}
 
-  .intro, .RT{
-    margin-left: 30px;
-  }
+.buttons {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .see-all{
-    margin-top: 10px;
-    margin-left: 95px;
-    font-weight: 600;
-    
-  }
+.intro,
+.RT {
+  margin-left: 30px;
+}
 
-  .see-all a{
-    text-decoration: none;
-    color: colors.$blue;
-    
-  }
+.see-all {
+  margin-top: 10px;
+  margin-left: 95px;
+  font-weight: 600;
 
+}
 
-  /* transaction.html */
+.see-all a {
+  text-decoration: none;
+  color: colors.$blue;
 
-  .transaction-page {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "back header ."
-      "transaction-form transaction-form transaction-form"
-      ". . send-credits";
-  }
-  
-  .back { grid-area: back; }
-  
-  .header { grid-area: header; }
-  
-  .transaction-form { grid-area: transaction-form; }
-  
-  .send-credits { grid-area: send-credits; }
-  
-  .transaction-form{
-    text-align: center;
-    padding-top: 5px;
-  }
-
-  .transaction-form input{
-    margin-bottom: 20px;
-  }
-
-  .transaction-form p{
-    text-align: left;
-    margin-left: 55px;
-  }
-
-  .send-credits{
-    float: right;
-    margin-right: 90px;
-  }
+}
 
 
-  /* history.html */
+/* transaction.html */
 
-  .history-page {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "back header ."
-      "search-bar search-bar filter";
-  }
-  
-  .back { grid-area: back; }
-  
-  .header { grid-area: header; }
-  
-  .search-bar { grid-area: search-bar; }
-  
-  .filter { grid-area: filter; }
-  
+.transaction-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "back header ."
+    "transaction-form transaction-form transaction-form"
+    ". . send-credits";
+}
 
-  .search{
-    width: 400px;
-    height: 30px;
-    font-size: 15px;
-    border-radius: 6px;
-    border-color: colors.$green;
-  }
+.back {
+  grid-area: back;
+}
 
-  .search-bar{
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
+.header {
+  grid-area: header;
+}
 
-  .filter-icon{
-    margin-left: 100px;
-    margin-top: 30px;
-  }
-  
+.transaction-form {
+  grid-area: transaction-form;
+}
+
+.send-credits {
+  grid-area: send-credits;
+}
+
+.transaction-form {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.transaction-form input {
+  margin-bottom: 20px;
+}
+
+.transaction-form p {
+  text-align: left;
+  margin-left: 55px;
+}
+
+.send-credits {
+  float: right;
+  margin-right: 90px;
+}
+
+
+/* history.html */
+
+.history-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "back header ."
+    "search-bar search-bar filter";
+}
+
+.back {
+  grid-area: back;
+}
+
+.header {
+  grid-area: header;
+}
+
+.search-bar {
+  grid-area: search-bar;
+}
+
+.filter {
+  grid-area: filter;
+}
+
+
+.search {
+  width: 400px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 6px;
+  border-color: colors.$green;
+}
+
+.search-bar {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.filter-icon {
+  margin-left: 100px;
+  margin-top: 30px;
+}
