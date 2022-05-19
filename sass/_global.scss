@@ -10,39 +10,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* register.html */
-
-.register-form {
-  text-align: center;
-  padding-top: 5px;
-}
-
-.register-form input {
-  margin-bottom: 15px;
-}
-
-.register-form p {
-  text-align: left;
-  margin-left: 55px;
-}
-
-.register {
-  text-align: left;
-  font-weight: 600;
-  margin-left: 20px;
-  padding-top: 10px;
-}
-
-.GT-register {
-  text-align: center;
-}
-
-.GT-login {
-  text-align: center;
-}
-
 /* home.html */
-
 .home-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -111,9 +79,7 @@ body {
 
 }
 
-
 /* transaction.html */
-
 .transaction-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -163,7 +129,6 @@ body {
   margin-right: 90px;
 }
 
-
 /* history.html */
 
 .history-page {
@@ -195,7 +160,6 @@ body {
   grid-area: filter;
 }
 
-
 .search {
   width: 400px;
   height: 30px;
@@ -208,9 +172,4 @@ body {
   margin-left: 30px;
   margin-top: 30px;
   margin-bottom: 15px;
-}
-
-.filter-icon {
-  margin-left: 100px;
-  margin-top: 30px;
 }

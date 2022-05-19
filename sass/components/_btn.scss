@@ -10,39 +10,37 @@
     font-weight: 600;
     transition: all 0.5s;
     margin: 0.5em;
-  }
-  
+}
+
 .btn:hover {
     background-color: colors.$blue;
     color: white;
 }
 
-.btn--submit {
+.btn--primary {
     background-color: colors.$blue;
     color: white;
 }
 
-.back-icon{
+.btn--backIcon {
     width: 30px;
-}
-
-.back-icon{
     text-align: left;
     margin-left: 25px;
     margin-top: 25px;
+}
 
-  }
-
-.arrow{
+.arrow {
     width: 45px;
     height: 45px;
     background-color: colors.$blue;
     border-radius: 10px;
 }
 
-.filter-icon{
-    width: 20px;
-    height: 20px;
+.btn--filterIcon {
+    margin-left: 100px;
+    margin-top: 30px;
 }
 
-  
+.btn--linkOutline {
+    text-align: center;
+}
