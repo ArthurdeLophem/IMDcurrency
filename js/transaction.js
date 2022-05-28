@@ -1,22 +1,37 @@
-let baseUrl = "https://imdcurrency.herokuapp.com/";
-const username = document.querySelector(".username").value;
-const quantity = document.querySelector(".quantity").value;
-const motive = document.querySelector(".motive").value;
-const comment = document.querySelector(".comment").value;
+let baseUrl = "https://imdcurrency.herokuapp.com";
+let toUserId;
 
-fetch(baseUrl + 'api/v1/users/transfers/', {
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-        "username": username,
+document.querySelector("#username").addEventListener("change", () => {
+    let username = document.querySelector("#username").value
+
+    fetch(baseUrl + '/api/v1/users/' + username, {
+        headers: {
+            'x-access-token': localStorage.getItem('token')
+        },
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data)
+            toUserId = data.data.userId;
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+})
+
+
+document.querySelector("#submitTransaction").addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const quantity = document.querySelector("#amount").value;
+    const motive = document.querySelector("#motive").value;
+    const comment = document.querySelector("#comment").value;
+    const data = ({
+        "userId": toUserId,
         "quantity": quantity,
         "motive": motive,
-        "comment": comment
+        "comment": comment,
     })
-}).then(res => {
-    console.log(res.json())
-}).catch((error) => {
-    console.log(error.message);
-});
+    console.log(data);
+})
+
