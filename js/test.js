@@ -1,3 +1,4 @@
+let baseUrl = "https://imdcurrency.herokuapp.com/";
 
 const data = {
     "username": "x",
@@ -5,7 +6,7 @@ const data = {
     "password": "z"
 };
 console.log("fetching data...");
-fetch('http://localhost:3001/users/api/v1/signup', {
+fetch(baseUrl + 'users/api/v1/signup', {
     method: 'POST', // or 'PUT'
     headers: {
         'Content-Type': 'application/json',
