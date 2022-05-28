@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-  </head>
-  <body>
-    
-    <nav>
-      <a href="login.html" class="btn btn--submit">
-        <span class="btn__text">Login</span>
-      </a>
-  
-      <a href="register.html" class="btn btn--submit">
-        <span class="btn__text">Register</span>
-      </a>
-    </nav>
-    <div class="home-page">
-      <div class="intro">
-        <h1>Hello [name]</h1>
-        <p>Your current amount of IMD-coins is:</p>
-      </div>
 
-      <div class="current-amount">
-        <h1 class="mycoins">[amount]</h1>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+</head>
 
-      <div class="buttons">
-        <a href="leaderboard.html" class="btn">
-          <span class="btn__text">Leaderboard</span>
-        </a>
+<body>
 
-        <a href="transaction.html" class="btn">
-          <span class="btn__text">Transaction</span>
-        </a>
+  <nav>
+    <a href="login.html" class="btn btn--submit">
+      <span class="btn__text">Login</span>
+    </a>
 
-        <a href="history.html" class="btn">
-          <span class="btn__text">History</span>
-        </a>
-      </div>
-
-      <div class="RT">
-        <h2>Transactions:</h2>
-      </div>
-
-      <div class="see-all">
-        <a href="history.html">
-          <p>See all</p>
-        </a>
-      </div>
+    <a href="register.html" class="btn btn--submit">
+      <span class="btn__text">Register</span>
+    </a>
+  </nav>
+  <div class="home-page">
+    <div class="intro">
+      <h1>Hello [name]</h1>
+      <p>Your current amount of IMD-coins is:</p>
     </div>
 
-    <div class="transaction">      
-      <h3 class="name">[name] send you some IMD-coins</h3>
-      <p class="comment">Thanks for helping me code php</p>
-      <p class="date">[date]</p>
-      <p class="amount">[amount of coins]</p>
+    <div class="current-amount">
+      <h1 class="mycoins">[amount]</h1>
     </div>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+    <div class="buttons">
+      <a href="leaderboard.html" class="btn">
+        <span class="btn__text">Leaderboard</span>
+      </a>
+
+      <a href="transaction.html" class="btn">
+        <span class="btn__text">Transaction</span>
+      </a>
+
+      <a href="history.html" class="btn">
+        <span class="btn__text">History</span>
+      </a>
+    </div>
+
+    <div class="RT">
+      <h2>Transactions:</h2>
+    </div>
+
+    <div class="see-all">
+      <a href="history.html">
+        <p>See all</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="transaction">
+    <h3 class="name">[name] send you some IMD-coins</h3>
+    <p class="comment">Thanks for helping me code php</p>
+    <p class="date">[date]</p>
+    <p class="amount">[amount of coins]</p>
+  </div>
+
+  <script type="module" src="js/token.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Log in</title>
-  </head>
-  <body>
-    
-    <div class="transaction-page">
 
-      <div class="back">
-        <a href="home.html">
-          <img class="back-icon" src="/images/back-arrow.svg" alt="back-arrow">
-        </a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log in</title>
+</head>
 
-      <div class="header">
-        <h2>Transaction</h2>
-      </div>
+<body>
 
-      <div class="transaction-form">
-        <form>
-          <p>Username</p>
-            <input class="form__input" type="text" title="username"/>
-          <p>Amount</p>
-            <input class="form__input" type="number" id="quantity" name="quantity" title="quantity">
-          <p>Motive</p>
-            <input class="form__input" type="text" title="motive"/>
-          <p>Comment</p>
-            <input class="form__input" type="text" title="comment"/>  
-        </form>
-      </div>
-      
-      <div class="send-credits">
-        <a href="transaction.html" class="btn">
-          <span class="btn__text">Send credits</span>
-        </a>
-      </div>
+  <div class="transaction-page">
+
+    <div class="back">
+      <a href="home.html">
+        <img class="back-icon" src="/images/back-arrow.svg" alt="back-arrow">
+      </a>
     </div>
 
+    <div class="header">
+      <h2>Transaction</h2>
+    </div>
 
+    <div class="transaction-form">
+      <form>
+        <p>Username</p>
+        <input class="form__input" type="text" title="username" />
+        <p>Amount</p>
+        <input class="form__input" type="number" id="quantity" name="quantity" title="quantity">
+        <p>Motive</p>
+        <input class="form__input" type="text" title="motive" />
+        <p>Comment</p>
+        <input class="form__input" type="text" title="comment" />
+      </form>
+    </div>
 
+    <div class="send-credits">
+      <a href="transaction.html" class="btn">
+        <span class="btn__text">Send credits</span>
+      </a>
+    </div>
+  </div>
 
-    <script type="module" src="/main.js"></script>
-    <script type="module" src="js/transaction.js"></script>
-  </body>
+  <script type="module" src="js/token.js"></script>
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="js/transaction.js"></script>
+</body>
+
 </html>
