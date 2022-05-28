@@ -10,6 +10,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.header{
+  text-align: center;
+  margin-top: 30px;
+}
+
 /* home.html */
 .home-page {
   display: grid;
@@ -140,12 +145,12 @@ body {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "back header ."
+    "back-icon header ."
     "search-bar search-bar filter";
 }
 
-.back {
-  grid-area: back;
+.back-icon {
+  grid-area: back-icon;
 }
 
 .header {
@@ -173,3 +178,47 @@ body {
   margin-top: 30px;
   margin-bottom: 15px;
 }
+
+.filter-icon{
+  width: 20px;
+}
+
+/* leaderboard.html */
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 500px;
+  border: 2px solid colors.$green;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+
+.leaderboard-page {  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "back-icon header ."
+    "top-3 top-3 top-3"
+    "leaderboard-table leaderboard-table leaderboard-table";
+}
+
+.header { grid-area: header; }
+
+.back-icon { grid-area: back-icon; }
+
+.top-3 { grid-area: top-3; }
+
+.leaderboard-table { 
+  grid-area: leaderboard-table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
