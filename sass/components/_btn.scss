@@ -29,12 +29,12 @@
     margin-top: 25px;
 }
 
-.arrow {
+/*.arrow {
     width: 45px;
     height: 45px;
     background-color: colors.$blue;
     border-radius: 10px;
-}
+}*/
 
 .btn--filterIcon {
     margin-left: 100px;
@@ -43,4 +43,11 @@
 
 .btn--linkOutline {
     text-align: center;
+}
+
+.back-icon{
+    width: 30px;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 50px;
 }
