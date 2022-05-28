@@ -19,7 +19,13 @@ document.querySelector(".btn").addEventListener("click", (e) => {
     }).then(response => response.json())
         .then(data => {
             console.log('Success:', data);
+            if (data.success == true) {
+                let token = data.message.token;
+                localStorage.setItem("token", token);
+                window.location.href = "index.html";
+            }
         })
+
         .catch((error) => {
             console.error('Error:', error);
         });

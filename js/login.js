@@ -13,9 +13,16 @@ document.querySelector(".btn").addEventListener("click", (e) => {
             "email": email,
             "password": password
         })
-    }).then(res => {
-        console.log(res.json())
-    }).catch((error) => {
-        console.log(error.message);
-    });
+    }).then(res => res.json())
+        .then(data => {
+            console.log('Success:', data);
+            if (data.success == true) {
+                let token = data.message.token;
+                localStorage.setItem("token", token);
+                window.location.href = "index.html";
+            }
+        })
+        .catch((error) => {
+            console.log(error.message);
+        });
 })
