@@ -59,7 +59,7 @@ document.querySelector("#submitTransaction").addEventListener("click", (e) => {
             },
             body: JSON.stringify({
                 "message": message,
-                "_id": localStorage.getItem('_uid'),
+                "_id": userData._id,
                 "to_user": toUserId,
                 "amount": amount,
                 "completed": true
