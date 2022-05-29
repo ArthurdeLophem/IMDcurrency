@@ -22,16 +22,26 @@ document.querySelector("#username").addEventListener("change", () => {
 
 document.querySelector("#submitTransaction").addEventListener("click", (e) => {
     e.preventDefault();
-
-    const quantity = document.querySelector("#amount").value;
-    const motive = document.querySelector("#motive").value;
-    const comment = document.querySelector("#comment").value;
-    const data = ({
-        "userId": toUserId,
-        "quantity": quantity,
-        "motive": motive,
-        "comment": comment,
-    })
-    console.log(data);
+    const amount = document.querySelector("#amount").value;
+    const message = document.querySelector("#message").value;
+    console.log(amount)
+    fetch(baseUrl + '/api/v1/transfers/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "message": message,
+            "_id": localStorage.getItem('_uid'),
+            "to_user": toUserId,
+            "amount": amount,
+            "completed": true
+        })
+    }).then(res => res.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch((error) => {
+            console.log(error.message);
+        });
 })
-
