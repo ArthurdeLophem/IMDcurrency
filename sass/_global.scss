@@ -200,20 +200,17 @@ td, th {
 
 .leaderboard-page {  display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "back-icon header ."
-    "top-3 top-3 top-3"
     "leaderboard-table leaderboard-table leaderboard-table";
 }
 
 .header { grid-area: header; }
 
 .back-icon { grid-area: back-icon; }
-
-.top-3 { grid-area: top-3; }
 
 .leaderboard-table { 
   grid-area: leaderboard-table;
