@@ -17,9 +17,10 @@ document.querySelector(".btn").addEventListener("click", (e) => {
         .then(data => {
             console.log('Success:', data);
             if (data.success == true) {
+                console.log(data.message);
                 let token = data.message.token;
                 localStorage.setItem("token", token);
-                let userId = data.message.userId;
+                let userId = data.message._id;
                 localStorage.setItem("_uid", userId);
                 window.location.href = "index.html";
             }
