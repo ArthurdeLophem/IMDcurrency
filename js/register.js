@@ -37,3 +37,15 @@ document.querySelector(".btn").addEventListener("click", (e) => {
             console.error('Error:', error);
         });
 })
+
+document.querySelector('#email').addEventListener('change', (e) => {
+    let emailChecked;
+    if (e.target.value.includes('@student.thomasmore.be')) {
+        e.target.classList.remove('form__input--invalid')
+        emailChecked = true;
+    }
+    else {
+        e.target.classList.add('form__input--invalid')
+        emailChecked = false;
+    }
+})

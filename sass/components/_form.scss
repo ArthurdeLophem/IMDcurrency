@@ -23,6 +23,11 @@
     align-self: center;
 }
 
+.form__input--invalid {
+    color: colors.$red;
+    border-color: colors.$red;
+}
+
 .form__input--xl {
     width: 80%;
     height: 60px;
