@@ -129,10 +129,6 @@ body {
   margin-left: 55px;
 }
 
-.send-credits {
-  float: right;
-  margin-right: 90px;
-}
 
 /* history.html */
 
@@ -170,7 +166,6 @@ body {
   height: 30px;
   font-size: 15px;
   border-radius: 6px;
-  border-color: colors.$green;
 }
 
 .search-bar {
@@ -181,6 +176,8 @@ body {
 
 .filter-icon{
   width: 20px;
+  margin-left: 100px;
+  margin-top: 30px;
 }
 
 /* leaderboard.html */
@@ -195,6 +192,10 @@ table {
 td, th {
   text-align: left;
   padding: 8px;
+}
+
+th{
+  background-color: colors.$green;
 }
 
 
@@ -217,5 +218,6 @@ td, th {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 
