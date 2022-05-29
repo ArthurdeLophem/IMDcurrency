@@ -12,7 +12,7 @@ document.querySelector("#username").addEventListener("change", () => {
 
     fetch(baseUrl + '/api/v1/users/' + username, {
         headers: {
-            'x-access-token': localStorage.getItem('token')
+            'x-access-token': userData.token
         },
     })
         .then(response => response.json())
@@ -103,7 +103,7 @@ document.querySelector('#amount').addEventListener('change', (e) => {
         document.getElementById("amount-failed").innerHTML = "*Not enough coins";
         amountChecked = false;
     }
-    else if(e.target.value <= mycoins){
+    else if (e.target.value <= mycoins) {
         e.target.classList.remove('form__input--invalid')
         document.getElementById("amount-failed").innerHTML = "";
         amountChecked = true;
