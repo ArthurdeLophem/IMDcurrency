@@ -22,6 +22,8 @@ document.querySelector(".btn").addEventListener("click", (e) => {
             if (data.success == true) {
                 let token = data.message.token;
                 localStorage.setItem("token", token);
+                let userId = data.message.userId;
+                localStorage.setItem("_uid", userId);
                 window.location.href = "index.html";
             }
         })
