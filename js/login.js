@@ -18,10 +18,14 @@ document.querySelector(".btn").addEventListener("click", (e) => {
             console.log('Success:', data);
             if (data.success == true) {
                 console.log(data.message);
-                let token = data.message.token;
-                localStorage.setItem("token", token);
-                let userId = data.message._id;
-                localStorage.setItem("_uid", userId);
+                let userData =
+                {
+                    "_id": data.message._id,
+                    "coins": data.message.coins,
+                    "username": data.message.username,
+                    "token": data.message.token,
+                }
+                localStorage.setItem("userData", JSON.stringify(userData));
                 window.location.href = "index.html";
             }
         })
