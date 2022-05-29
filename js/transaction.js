@@ -1,5 +1,11 @@
 let baseUrl = "https://imdcurrency.herokuapp.com";
 let toUserId;
+let userData = JSON.parse(localStorage.getItem('userData'));
+console.log(userData);
+let mycoins = userData.coins;
+
+/*let mycoins = JSON.parse(localStorage.getItem("coins")); */
+console.log(mycoins);
 
 document.querySelector("#username").addEventListener("change", () => {
     let username = document.querySelector("#username").value
@@ -88,4 +94,18 @@ document.querySelector("#submitTransaction").addEventListener("click", (e) => {
             });
     }
 
+})
+
+document.querySelector('#amount').addEventListener('change', (e) => {
+    let amountChecked;
+    if (e.target.value > mycoins) {
+        e.target.classList.add('form__input--invalid')
+        document.getElementById("amount-failed").innerHTML = "*Not enough coins";
+        amountChecked = false;
+    }
+    else if(e.target.value <= mycoins){
+        e.target.classList.remove('form__input--invalid')
+        document.getElementById("amount-failed").innerHTML = "";
+        amountChecked = true;
+    }
 })
